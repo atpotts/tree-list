@@ -1,5 +1,8 @@
 # Tree Drawing Tool
 
+**NB I've just discovered the `--fromfile` option to `tree`, rendering this
+a slightly pointless exercise**
+
 Small experiment.
 
 The standard linux `tree` tool does it's own directory walking. It has the
