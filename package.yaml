@@ -1,0 +1,24 @@
+name: tree-list
+
+version: 0.1.0.0
+
+ghc-options: -Wall
+
+dependencies:
+  - base
+  - classy-prelude
+  - containers
+  - mono-traversable
+
+# library:
+#   source-dirs: src/
+
+executables:
+  tree-list:
+    main: Main.hs
+    source-dirs: app/
+
+# tests:
+#   HpackExampleProject-test:
+#     main: Spec.hs
+#     source-dirs: test/
