@@ -7,18 +7,30 @@ ghc-options: -Wall
 dependencies:
   - base
   - classy-prelude
-  - containers
+  - optparse-generic
+  - containers >= 0.2
   - mono-traversable
+  - ordered-containers
 
-# library:
-#   source-dirs: src/
+default-extensions:
+  - NoImplicitPrelude
+  - ConstraintKinds
+  - DataKinds
+  - DefaultSignatures
+  - OverloadedStrings
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TypeFamilies
+  - TypeApplications
+  - TypeOperators
+  - QuantifiedConstraints
+
+library:
+  source-dirs: src/
 
 executables:
   tree-list:
     main: Main.hs
     source-dirs: app/
-
-# tests:
-#   HpackExampleProject-test:
-#     main: Spec.hs
-#     source-dirs: test/
+    dependencies:
+      - tree-list
