@@ -1,7 +1,7 @@
 # Tree Drawing Tool
 
-**NB I've just discovered the `--fromfile` option to `tree`, rendering this
-a slightly pointless exercise**
+**NB I've just discovered the `--fromfile` option in some versions of `tree`, 
+rendering this a slightly pointless exercise**
 
 Small experiment.
 
